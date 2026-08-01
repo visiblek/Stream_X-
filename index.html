@@ -3,77 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreamX - Unlimited Streaming</title>
-    <meta name="description" content="Download StreamX to watch unlimited TV series, dramas, and exclusive movies with fast untraceable pipelines.">
+    <title>StreamX - The Ultimate Streaming Experience</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="glass-orb orb-1"></div>
-    <div class="glass-orb orb-2"></div>
+    <div class="animated-bg"></div>
+    <div class="particles"></div>
 
     <nav class="navbar">
         <div class="logo">
+            <img src="logo.png" alt="StreamX Logo" class="logo-img">
             <span class="logo-text">Stream<span class="accent">X</span></span>
         </div>
         <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="StreamX.apk" download="StreamX.apk" class="btn-primary">Download APK</a>
+            <a href="#features" class="nav-item">Features</a>
+            <a href="https://github.com/visiblek/Stream_X-/releases/download/v1.0.0/Stream.X.apk" class="btn-glow">
+                <i class="fa-brands fa-android"></i> Download APK
+            </a>
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="hero-content">
-            <div class="badge">🔥 100% Free Streaming</div>
-            <h1 class="hero-title">Unlimited Movies & <br><span class="accent-gradient">Exclusive Dramas</span></h1>
-            <p class="hero-subtitle">High-definition entertainment with zero external browser interruptions. Fast untraceable pipelines directly to your device.</p>
+            <div class="badge-container">
+                <div class="badge-glow"></div>
+                <span class="badge">🔥 v1.0.0 is Live!</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Unlimited Entertainment.<br>
+                <span class="text-gradient">Zero Interruptions.</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Experience high-definition movies and exclusive TV series with our revolutionary 
+                anti-ad technology. No popups, no limits, just pure streaming.
+            </p>
+            
             <div class="hero-actions">
-                <a href="StreamX.apk" download="StreamX.apk" class="btn-primary large">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z" fill="white"/>
-                    </svg>
-                    Download App Now
+                <a href="https://github.com/visiblek/Stream_X-/releases/download/v1.0.0/Stream.X.apk" class="btn-primary">
+                    <div class="btn-bg"></div>
+                    <span class="btn-text">
+                        <i class="fa-solid fa-cloud-arrow-down"></i> Get StreamX Now
+                    </span>
                 </a>
-                <span class="version-info">Version 1.0.0 | Size: 52 MB</span>
+                <div class="developed-by">
+                    <i class="fa-solid fa-code"></i> Developed by <span class="ar-demons">We Are Demons</span>
+                </div>
             </div>
         </div>
-        <div class="hero-image-container">
-            <div class="phone-mockup">
-                <div class="screen">
-                    <div class="app-ui">
-                        <div class="app-header">StreamX</div>
-                        <div class="app-card"></div>
-                        <div class="app-card half"></div>
-                        <div class="app-card half right"></div>
+
+        <div class="hero-visual">
+            <div class="phone-container">
+                <div class="glow-behind-phone"></div>
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="app-ui">
+                            <div class="app-header">
+                                <i class="fa-solid fa-bars"></i>
+                                <span>StreamX</span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="hero-banner-app">
+                                <div class="play-circle"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <h3 class="section-title-app">Trending Now</h3>
+                            <div class="movie-row">
+                                <div class="movie-card"></div>
+                                <div class="movie-card"></div>
+                                <div class="movie-card"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="features" class="features">
-        <h2>Why Choose <span class="accent">StreamX?</span></h2>
-        <div class="feature-grid">
+    <section id="features" class="features-section">
+        <h2 class="section-heading">Why StreamX is <span class="text-gradient">Different</span></h2>
+        
+        <div class="features-grid">
             <div class="feature-card">
-                <div class="icon">🚫</div>
-                <h3>No Annoying Ads</h3>
-                <p>We block popup ads and external browser redirects natively inside the app for a smooth experience.</p>
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Built-in Adblocker</h3>
+                <p>Our custom player natively blocks popup ads and external redirects. Enjoy your movie without annoying popups.</p>
             </div>
+            
             <div class="feature-card">
-                <div class="icon">⚡</div>
-                <h3>Fast Servers</h3>
-                <p>Multiple server links per episode (DoodStream, StreamTape) so you never buffer.</p>
+                <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3>Lightning Fast</h3>
+                <p>Multiple server options including DoodStream and StreamTape ensures you never have to buffer again.</p>
             </div>
+            
             <div class="feature-card">
-                <div class="icon">📱</div>
-                <h3>Secure & Private</h3>
-                <p>Advanced security architecture to keep your streaming completely private and untraceable.</p>
+                <div class="feature-icon"><i class="fa-solid fa-user-ninja"></i></div>
+                <h3>100% Anonymous</h3>
+                <p>No registration required. Untraceable pipelines keep your streaming history completely private.</p>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2026 StreamX. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="StreamX Logo" class="logo-img">
+                <span class="logo-text">Stream<span class="accent">X</span></span>
+            </div>
+            <p class="footer-tagline">The future of mobile streaming.</p>
+            <div class="footer-credits">
+                <p>Proudly Designed & Developed by</p>
+                <h3 class="ar-demons-large">WE ARE DEMONS</h3>
+            </div>
+            <p class="copyright">&copy; 2026 StreamX by We Are Demons. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
